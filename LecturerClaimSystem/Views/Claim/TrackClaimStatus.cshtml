@@ -1,0 +1,52 @@
+﻿@model LecturerClaimSystem.Models.Claim
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-pink">Track Claim Status (Lecturer)</h2>
+
+    <table class="table table-bordered border-pink">
+        <thead style="background-color: #f8bbd0;">
+            <tr>
+                <th>Claim ID</th>
+                <th>Month</th>
+                <th>Hours Worked</th>
+                <th>Hourly Rate</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1001</td>
+                <td>August 2025</td>
+                <td>20</td>
+                <td>R50.00</td>
+                <td>R1000.00</td>
+                <td><span class="badge bg-warning text-dark">Submitted</span></td>
+                <td>2025-08-05 14:32</td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>July 2025</td>
+                <td>15</td>
+                <td>R45.00</td>
+                <td>R675.00</td>
+                <td><span class="badge bg-success">Approved</span></td>
+                <td>2025-07-10 09:18</td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>June 2025</td>
+                <td>10</td>
+                <td>R60.00</td>
+                <td>R600.00</td>
+                <td><span class="badge bg-danger">Rejected</span></td>
+                <td>2025-06-15 11:45</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

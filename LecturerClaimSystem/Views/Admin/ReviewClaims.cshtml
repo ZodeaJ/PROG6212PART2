@@ -1,0 +1,68 @@
+﻿@model LecturerClaimSystem.Models.Claim
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-5">
+    <h2 class="text-pink">Review Submitted Claims (Coordinator)</h2>
+
+    <table class="table table-bordered border-pink">
+        <thead style="background-color: #f8bbd0;">
+            <tr>
+                <th>Claim ID</th>
+                <th>Lecturer</th>
+                <th>Month</th>
+                <th>Hours</th>
+                <th>Rate</th>
+                <th>Amount</th>
+                <th>Document</th>
+                <th>Feedback</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1001</td>
+                <td>Stacy Mayhem</td>
+                <td>August 2025</td>
+                <td>20</td>
+                <td>R50.00</td>
+                <td>R1000.00</td>
+                <td><a href="#">View</a></td>
+                <td><a href="#">Feedback</a></td>
+                <td>
+                    <button class="btn btn-primary btn-sm">Forward</button>
+                    <button class="btn btn-danger btn-sm">Reject</button>
+                </td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>Jeffery Brown</td>
+                <td>July 2025</td>
+                <td>15</td>
+                <td>R45.00</td>
+                <td>R675.00</td>
+                <td><a href="#">View</a></td>
+                <td><a href="#">Feedback</a></td>
+                <td>
+                    <button class="btn btn-primary btn-sm">Forward</button>
+                    <button class="btn btn-danger btn-sm">Reject</button>
+                </td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>Alex Smith</td>
+                <td>June 2025</td>
+                <td>10</td>
+                <td>R60.00</td>
+                <td>R600.00</td>
+                <td><a href="#">View</a></td>
+                <td><a href="#">Feedback</a></td>
+                <td>
+                    <button class="btn btn-primary btn-sm">Forward</button>
+                    <button class="btn btn-danger btn-sm">Reject</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,445 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\controllers\\lecturercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:controllers\\lecturercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\views\\admin\\reviewclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:views\\admin\\reviewclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\views\\lecturer\\makeaclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:views\\lecturer\\makeaclaim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\models\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:models\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\models\\coordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:models\\coordinator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\views\\lecturer\\claimfeedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:views\\lecturer\\claimfeedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\views\\admin\\verifyclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:views\\admin\\verifyclaims.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\views\\claim\\trackclaimstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:views\\claim\\trackclaimstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\migrations\\20250915080419_secondmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:migrations\\20250915080419_secondmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\migrations\\20250905084112_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:migrations\\20250905084112_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|c:\\users\\lab_services_student\\documents\\lecturerclaimsystem\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D7DCCC-9210-40D8-AF00-A020D0FDFEE8}|LecturerClaimSystem.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LecturerController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Controllers\\LecturerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LecturerController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Controllers\\LecturerController.cs",
+              "RelativeToolTip": "Controllers\\LecturerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T08:17:01.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "Models\\Feedback.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\Feedback.cs",
+              "RelativeToolTip": "Models\\Feedback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T07:45:24.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReviewClaims.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Admin\\ReviewClaims.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ReviewClaims.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Admin\\ReviewClaims.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ReviewClaims.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAABAvTYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T15:47:55.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Claim.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\Claim.cs",
+              "RelativeDocumentMoniker": "Models\\Claim.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\Claim.cs",
+              "RelativeToolTip": "Models\\Claim.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T07:54:58.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\Manager.cs",
+              "RelativeDocumentMoniker": "Models\\Manager.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\Manager.cs",
+              "RelativeToolTip": "Models\\Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T07:41:49.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-05T08:28:17.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAcAAACgzMzMzCw6wCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T08:30:55.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T15:55:34.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T13:38:38.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClaimController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Controllers\\ClaimController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClaimController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Controllers\\ClaimController.cs",
+              "RelativeToolTip": "Controllers\\ClaimController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T13:32:13.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T13:32:39.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Lecturer.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\Lecturer.cs",
+              "RelativeDocumentMoniker": "Models\\Lecturer.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\Lecturer.cs",
+              "RelativeToolTip": "Models\\Lecturer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T08:06:52.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MakeAClaim.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Lecturer\\MakeAClaim.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lecturer\\MakeAClaim.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Lecturer\\MakeAClaim.cshtml",
+              "RelativeToolTip": "Views\\Lecturer\\MakeAClaim.cshtml",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAAAE8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-07T13:05:44.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T07:27:13.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Coordinator.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\Coordinator.cs",
+              "RelativeDocumentMoniker": "Models\\Coordinator.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Models\\Coordinator.cs",
+              "RelativeToolTip": "Models\\Coordinator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T07:41:13.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ClaimFeedback.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Lecturer\\ClaimFeedback.cshtml",
+              "RelativeDocumentMoniker": "Views\\Lecturer\\ClaimFeedback.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Lecturer\\ClaimFeedback.cshtml",
+              "RelativeToolTip": "Views\\Lecturer\\ClaimFeedback.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T15:50:22.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "VerifyClaims.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Admin\\VerifyClaims.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\VerifyClaims.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Admin\\VerifyClaims.cshtml",
+              "RelativeToolTip": "Views\\Admin\\VerifyClaims.cshtml",
+              "ViewState": "AgIAABQAAACgZmZmZiYwwDEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-07T13:11:46.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TrackClaimStatus.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Claim\\TrackClaimStatus.cshtml",
+              "RelativeDocumentMoniker": "Views\\Claim\\TrackClaimStatus.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Claim\\TrackClaimStatus.cshtml",
+              "RelativeToolTip": "Views\\Claim\\TrackClaimStatus.cshtml",
+              "ViewState": "AgIAAA4AAADA/////38pwAcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-07T13:12:09.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20250915080419_secondmigration.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Migrations\\20250915080419_secondmigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250915080419_secondmigration.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Migrations\\20250915080419_secondmigration.cs",
+              "RelativeToolTip": "Migrations\\20250915080419_secondmigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T08:04:19.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAACYZWZmZmb0vx4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-07T13:23:46.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T15:49:30.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T15:49:32.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T15:49:28.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T15:49:27.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20250905084112_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Migrations\\20250905084112_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250905084112_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Migrations\\20250905084112_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250905084112_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T08:41:13.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\LecturerClaimSystem\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T08:03:31.017Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

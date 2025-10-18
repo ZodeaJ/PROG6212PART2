@@ -1,0 +1,40 @@
+﻿@model LecturerClaimSystem.Models.Claim
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-5">
+    <h2 class="text-pink">Claim Feedback (Lecturer)</h2>
+
+    <div class="card mb-3 border-pink">
+        <div class="card-header bg-success text-white">
+            Claim #1002 — Status: <span class="badge bg-success">Approved</span>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Lecturer: Jeffery Brown</h5>
+            <p><strong>Coordinator Feedback:</strong> "All details verified."</p>
+            <p><strong>Manager Feedback:</strong> "Approved. Well documented."</p>
+        </div>
+    </div>
+
+    <div class="card mb-3 border-pink">
+        <div class="card-header bg-danger text-white">
+            Claim #1003 — Status: <span class="badge bg-danger">Rejected</span>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Lecturer: Alex Smith</h5>
+            <p><strong>Coordinator Feedback:</strong> "Hours unclear, forwarded for review."</p>
+            <p><strong>Manager Feedback:</strong> "Claim rejected due to hours being invalid"</p>
+        </div>
+    </div>
+
+    <div class="card mb-3 border-pink">
+        <div class="card-header bg-warning text-dark">
+            Claim #1001 — Status: <span class="badge bg-warning text-dark">Submitted</span>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Lecturer: Stacy Mayhem</h5>
+            <p>No feedback available yet.</p>
+        </div>
+    </div>
+</div>
