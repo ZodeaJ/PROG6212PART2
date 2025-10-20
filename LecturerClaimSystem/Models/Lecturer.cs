@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace LecturerClaimSystem.Models
 {
@@ -18,6 +19,6 @@ namespace LecturerClaimSystem.Models
         [Required, StringLength(100)]
         public string Department { get; set; }
 
-        public ICollection<Claim> Claims { get; set; }
+        public ICollection<Claim> Claims { get; set; } = new List<Claim>();
     }
 }

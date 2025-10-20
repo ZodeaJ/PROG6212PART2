@@ -1,8 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LecturerClaimSystem.Models
 {
-
     public enum ClaimStatus
     {
         Submitted,     // lecturer submits
@@ -16,31 +18,34 @@ namespace LecturerClaimSystem.Models
         public int ClaimId { get; set; }
 
         [Required]
-        public int LecturerId { get; set; } //foriegn key
+        public int LecturerId { get; set; } // foreign key
 
-        public Lecturer Lecturer { get; set; } 
+        public Lecturer? Lecturer { get; set; }
 
-        [Required]
-        public string Month { get; set; } 
+        [Required, StringLength(50)]
+        public string Month { get; set; }
 
         [Required]
         public int HoursWorked { get; set; }
 
         [Required]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal HourlyRate { get; set; }
 
-        public decimal Amount => HoursWorked * HourlyRate; 
+        // Computed property — do not map to DB
+        [NotMapped]
+        public decimal Amount => HoursWorked * HourlyRate;
 
         [Required, StringLength(200)]
         public string Description { get; set; }
 
-        [Required]
-        public string SupportingDocument { get; set; } 
+        public string? SupportingDocument { get; set; }
 
         public ClaimStatus Status { get; set; } = ClaimStatus.Submitted;
 
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-        public ICollection<Feedback> FeedbackMessages { get; set; }
+        // initialize collection to avoid null refs in views/controllers
+        public ICollection<Feedback> FeedbackMessages { get; set; } = new List<Feedback>();
     }
 }

@@ -4,6 +4,7 @@ using LecturerClaimSystem.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LecturerClaimSystem.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251018121540_FixCascadeDelete")]
+    partial class FixCascadeDelete
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,9 +34,7 @@ namespace LecturerClaimSystem.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClaimId"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETDATE()");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -53,9 +54,8 @@ namespace LecturerClaimSystem.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
 
                     b.Property<string>("SupportingDocument")
                         .IsRequired()
@@ -65,7 +65,7 @@ namespace LecturerClaimSystem.Migrations
 
                     b.HasIndex("LecturerId");
 
-                    b.ToTable("Claims", (string)null);
+                    b.ToTable("Claims");
                 });
 
             modelBuilder.Entity("LecturerClaimSystem.Models.Coordinator", b =>
@@ -82,7 +82,7 @@ namespace LecturerClaimSystem.Migrations
 
                     b.HasKey("CoordinatorId");
 
-                    b.ToTable("Coordinators", (string)null);
+                    b.ToTable("Coordinators");
                 });
 
             modelBuilder.Entity("LecturerClaimSystem.Models.Feedback", b =>
@@ -94,6 +94,9 @@ namespace LecturerClaimSystem.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FeedbackId"));
 
                     b.Property<int>("ClaimId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ClaimId1")
                         .HasColumnType("int");
 
                     b.Property<string>("Message")
@@ -111,7 +114,9 @@ namespace LecturerClaimSystem.Migrations
 
                     b.HasIndex("ClaimId");
 
-                    b.ToTable("Feedbacks", (string)null);
+                    b.HasIndex("ClaimId1");
+
+                    b.ToTable("Feedbacks");
                 });
 
             modelBuilder.Entity("LecturerClaimSystem.Models.Lecturer", b =>
@@ -144,7 +149,7 @@ namespace LecturerClaimSystem.Migrations
 
                     b.HasKey("LecturerId");
 
-                    b.ToTable("Lecturers", (string)null);
+                    b.ToTable("Lecturers");
                 });
 
             modelBuilder.Entity("LecturerClaimSystem.Models.Manager", b =>
@@ -161,7 +166,7 @@ namespace LecturerClaimSystem.Migrations
 
                     b.HasKey("ManagerId");
 
-                    b.ToTable("Managers", (string)null);
+                    b.ToTable("Managers");
                 });
 
             modelBuilder.Entity("LecturerClaimSystem.Models.Claim", b =>
@@ -169,7 +174,7 @@ namespace LecturerClaimSystem.Migrations
                     b.HasOne("LecturerClaimSystem.Models.Lecturer", "Lecturer")
                         .WithMany("Claims")
                         .HasForeignKey("LecturerId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Lecturer");
@@ -177,10 +182,16 @@ namespace LecturerClaimSystem.Migrations
 
             modelBuilder.Entity("LecturerClaimSystem.Models.Feedback", b =>
                 {
-                    b.HasOne("LecturerClaimSystem.Models.Claim", "Claim")
+                    b.HasOne("LecturerClaimSystem.Models.Claim", null)
                         .WithMany("FeedbackMessages")
                         .HasForeignKey("ClaimId")
                         .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("LecturerClaimSystem.Models.Claim", "Claim")
+                        .WithMany()
+                        .HasForeignKey("ClaimId1")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Claim");

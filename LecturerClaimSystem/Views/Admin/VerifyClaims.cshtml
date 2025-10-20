@@ -1,65 +1,102 @@
-﻿@model LecturerClaimSystem.Models.Claim
-
+﻿@model IEnumerable<LecturerClaimSystem.Models.Claim>
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Verify Claims";
 }
 
-<div class="container mt-5">
-    <h2 class="text-pink">Verify Submitted Claims (Manager)</h2>
+<h2>Verify Forwarded Claims</h2>
 
-    <table class="table table-striped table-bordered border-pink">
-        <thead style="background-color: #f8bbd0;">
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No claims to verify at the moment.</div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
             <tr>
                 <th>Claim ID</th>
                 <th>Lecturer</th>
                 <th>Month</th>
-                <th>Hours Worked</th>
-                <th>Hourly Rate</th>
-                <th>Total Amount</th>
+                <th>Hours</th>
+                <th>Rate</th>
+                <th>Amount</th>
+                <th>Description</th>
                 <th>Supporting Document</th>
-                <th>Action</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1001</td>
-                <td>Stacy Mayhem</td>
-                <td>August 2025</td>
-                <td>20</td>
-                <td>R50.00</td>
-                <td>R1000.00</td>
-                <td><a href="#">View</a></td>
-                <td>
-                    <button class="btn btn-success btn-sm">Approve</button>
-                    <button class="btn btn-danger btn-sm">Reject</button>
-                </td>
-            </tr>
-            <tr>
-                <td>1002</td>
-                <td>Jeffery Brown</td>
-                <td>July 2025</td>
-                <td>15</td>
-                <td>R45.00</td>
-                <td>R675.00</td>
-                <td><a href="#">View</a></td>
-                <td>
-                    <button class="btn btn-success btn-sm">Approve</button>
-                    <button class="btn btn-danger btn-sm">Reject</button>
-                </td>
-            </tr>
-            <tr>
-                <td>1003</td>
-                <td>Alex Smith</td>
-                <td>June 2025</td>
-                <td>10</td>
-                <td>R60.00</td>
-                <td>R600.00</td>
-                <td><a href="#">View</a></td>
-                <td>
-                    <button class="btn btn-success btn-sm">Approve</button>
-                    <button class="btn btn-danger btn-sm">Reject</button>
-                </td>
-            </tr>
+            @foreach (var claim in Model)
+            {
+                <tr>
+                    <td>@claim.ClaimId</td>
+                    <td>@claim.Lecturer?.Name</td>
+                    <td>@claim.Month</td>
+                    <td>@claim.HoursWorked</td>
+                    <td>@claim.HourlyRate</td>
+                    <td>@claim.Amount</td>
+                    <td>@claim.Description</td>
+                    <td>
+                        <a asp-controller="Claim"
+                           asp-action="ViewDocument"
+                           asp-route-claimId="@claim.ClaimId"
+                           class="btn btn-sm btn-outline-dark"
+                           target="_blank">View</a>
+                    </td>
+                    <td>
+                        <form asp-action="ApproveClaim" method="post" class="d-inline">
+                            <input type="hidden" name="id" value="@claim.ClaimId" />
+                            <input type="hidden" name="managerMessage" value="Approved by manager" />
+                            <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                            @Html.AntiForgeryToken()
+                        </form>
+
+                        <button class="btn btn-danger btn-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#rejectModal"
+                                data-claimid="@claim.ClaimId">
+                            Reject
+                        </button>
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
+}
+
+<!-- Reject Modal -->
+<div class="modal fade" id="rejectModal" tabindex="-1" aria-labelledby="rejectModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form id="rejectForm" method="post" asp-action="RejectClaimByManager">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rejectModalLabel">Reject Claim</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="id" id="rejectClaimId" />
+                    <div class="mb-3">
+                        <label class="form-label">Reason for rejection</label>
+                        <textarea name="managerMessage" class="form-control" required></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger">Send Rejection</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+            @Html.AntiForgeryToken()
+        </form>
+    </div>
 </div>
+
+@section Scripts {
+    <script>
+        const rejectModal = document.getElementById('rejectModal');
+        rejectModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const claimId = button.getAttribute('data-claimid');
+            document.getElementById('rejectClaimId').value = claimId;
+        });
+    </script>
+}

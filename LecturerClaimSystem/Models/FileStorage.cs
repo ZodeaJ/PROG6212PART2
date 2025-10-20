@@ -3,9 +3,9 @@
     public class FileStorage : IFileStorage
     {
         private readonly IWebHostEnvironment _env;
-        private readonly string[] _allowed = new[] { ".pdf", ".docx", ".xlsx" };
-        //convert MB to bytes
-        private const long MaxBytes = 100 * 1024 * 1024; // 100 MB
+        private readonly string[] _allowed = new[] { ".pdf", ".docx", ".xlsx",".png" };
+        // 100 MB
+        private const long MaxBytes = 100 * 1024 * 1024;
 
         public FileStorage(IWebHostEnvironment env)
         {
@@ -22,9 +22,9 @@
 
             var ext = Path.GetExtension(file.FileName).ToLowerInvariant();
             if (Array.IndexOf(_allowed, ext) < 0)
-                throw new InvalidOperationException("Invalid file type. Add a valid file type: \".pdf\", \".docx\", \".xlsx\" ");
+                throw new InvalidOperationException("Invalid file type. Allowed types: .pdf, .docx, .xlsx");
 
-            var uploads = Path.Combine(_env.WebRootPath, "uploads");
+            var uploads = Path.Combine(_env.WebRootPath ?? "wwwroot", "uploads");
             if (!Directory.Exists(uploads))
                 Directory.CreateDirectory(uploads);
 
@@ -36,12 +36,12 @@
                 await file.CopyToAsync(fs);
             }
 
-            return unique; 
+            return unique;
         }
 
         public Task DeleteFile(string filename)
         {
-            var path = Path.Combine(_env.WebRootPath, "uploads", filename);
+            var path = Path.Combine(_env.WebRootPath ?? "wwwroot", "uploads", filename);
             if (File.Exists(path)) File.Delete(path);
             return Task.CompletedTask;
         }

@@ -1,40 +1,51 @@
 ﻿@model LecturerClaimSystem.Models.Claim
-
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Claim Feedback";
 }
-<div class="container mt-5">
-    <h2 class="text-pink">Claim Feedback (Lecturer)</h2>
 
-    <div class="card mb-3 border-pink">
-        <div class="card-header bg-success text-white">
-            Claim #1002 — Status: <span class="badge bg-success">Approved</span>
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Lecturer: Jeffery Brown</h5>
-            <p><strong>Coordinator Feedback:</strong> "All details verified."</p>
-            <p><strong>Manager Feedback:</strong> "Approved. Well documented."</p>
-        </div>
+<h2>Feedback for Claim @Model.ClaimId</h2>
+
+<div class="card mb-3">
+    <div class="card-header">
+        Claim Details
     </div>
-
-    <div class="card mb-3 border-pink">
-        <div class="card-header bg-danger text-white">
-            Claim #1003 — Status: <span class="badge bg-danger">Rejected</span>
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Lecturer: Alex Smith</h5>
-            <p><strong>Coordinator Feedback:</strong> "Hours unclear, forwarded for review."</p>
-            <p><strong>Manager Feedback:</strong> "Claim rejected due to hours being invalid"</p>
-        </div>
-    </div>
-
-    <div class="card mb-3 border-pink">
-        <div class="card-header bg-warning text-dark">
-            Claim #1001 — Status: <span class="badge bg-warning text-dark">Submitted</span>
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Lecturer: Stacy Mayhem</h5>
-            <p>No feedback available yet.</p>
-        </div>
+    <div class="card-body">
+        <p><strong>Month:</strong> @Model.Month</p>
+        <p><strong>Hours Worked:</strong> @Model.HoursWorked</p>
+        <p><strong>Hourly Rate:</strong> @Model.HourlyRate</p>
+        <p><strong>Amount:</strong> @Model.Amount</p>
+        <p><strong>Description:</strong> @Model.Description</p>
+        <p><strong>Status:</strong> @Model.Status</p>
+        @if (!string.IsNullOrEmpty(Model.SupportingDocument))
+        {
+            <p>
+                <strong>Document:</strong>
+                <a class="btn btn-secondary btn-sm"
+                   asp-controller="Claim"
+                   asp-action="ViewDocument"
+                   asp-route-claimId="@Model.ClaimId">
+                    View
+                </a>
+            </p>
+        }
     </div>
 </div>
+
+<h3>Feedback Messages</h3>
+
+@if (Model.FeedbackMessages != null && Model.FeedbackMessages.Any())
+{
+    <ul class="list-group">
+        @foreach (var fb in Model.FeedbackMessages.OrderBy(f => f.Timestamp))
+        {
+            <li class="list-group-item">
+                <strong>@fb.Role:</strong> @fb.Message
+                <span class="text-muted float-end">@fb.Timestamp.ToLocalTime()</span>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No feedback yet.</p>
+}

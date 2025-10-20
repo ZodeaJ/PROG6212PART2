@@ -1,68 +1,79 @@
-﻿@model LecturerClaimSystem.Models.Claim
-
+﻿@model IEnumerable<LecturerClaimSystem.Models.Claim>
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Review Claims";
 }
-<div class="container mt-5">
-    <h2 class="text-pink">Review Submitted Claims (Coordinator)</h2>
 
-    <table class="table table-bordered border-pink">
-        <thead style="background-color: #f8bbd0;">
+<h2>Review Submitted Claims</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ClaimId</th>
+            <th>Lecturer</th>
+            <th>Month</th>
+            <th>Hours</th>
+            <th>Rate</th>
+            <th>Amount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
             <tr>
-                <th>Claim ID</th>
-                <th>Lecturer</th>
-                <th>Month</th>
-                <th>Hours</th>
-                <th>Rate</th>
-                <th>Amount</th>
-                <th>Document</th>
-                <th>Feedback</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1001</td>
-                <td>Stacy Mayhem</td>
-                <td>August 2025</td>
-                <td>20</td>
-                <td>R50.00</td>
-                <td>R1000.00</td>
-                <td><a href="#">View</a></td>
-                <td><a href="#">Feedback</a></td>
+                <td>@c.ClaimId</td>
+                <td>@c.Lecturer?.Name</td>
+                <td>@c.Month</td>
+                <td>@c.HoursWorked</td>
+                <td>@c.HourlyRate</td>
+                <td>@c.Amount</td>
                 <td>
-                    <button class="btn btn-primary btn-sm">Forward</button>
-                    <button class="btn btn-danger btn-sm">Reject</button>
+                    <form asp-action="ForwardClaim" method="post" class="d-inline">
+                        <input type="hidden" name="id" value="@c.ClaimId" />
+                        <input type="hidden" name="coordinatorMessage" value="Forwarded to manager" />
+                        <button type="submit" class="btn btn-success btn-sm">Forward</button>
+                        @Html.AntiForgeryToken()
+                    </form>
+
+                    <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#rejectModal" data-claimid="@c.ClaimId">Reject</button>
                 </td>
             </tr>
-            <tr>
-                <td>1002</td>
-                <td>Jeffery Brown</td>
-                <td>July 2025</td>
-                <td>15</td>
-                <td>R45.00</td>
-                <td>R675.00</td>
-                <td><a href="#">View</a></td>
-                <td><a href="#">Feedback</a></td>
-                <td>
-                    <button class="btn btn-primary btn-sm">Forward</button>
-                    <button class="btn btn-danger btn-sm">Reject</button>
-                </td>
-            </tr>
-            <tr>
-                <td>1003</td>
-                <td>Alex Smith</td>
-                <td>June 2025</td>
-                <td>10</td>
-                <td>R60.00</td>
-                <td>R600.00</td>
-                <td><a href="#">View</a></td>
-                <td><a href="#">Feedback</a></td>
-                <td>
-                    <button class="btn btn-primary btn-sm">Forward</button>
-                    <button class="btn btn-danger btn-sm">Reject</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        }
+    </tbody>
+</table>
+
+<!-- Reject Modal -->
+<div class="modal fade" id="rejectModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <form id="rejectForm" method="post" asp-action="RejectByCoordinator">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Reject Claim</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="id" id="rejectClaimId" />
+                    <div class="form-group">
+                        <label>Reason for rejection</label>
+                        <textarea name="coordinatorMessage" class="form-control" required></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger">Send Rejection</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+            @Html.AntiForgeryToken()
+        </form>
+    </div>
 </div>
+
+@section Scripts {
+    <script>
+        $('#rejectModal').on('show.bs.modal', function (e) {
+            var button = $(e.relatedTarget);
+            var claimId = button.data('claimid');
+            $('#rejectClaimId').val(claimId);
+        });
+    </script>
+}
